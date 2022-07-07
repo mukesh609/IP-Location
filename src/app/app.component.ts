@@ -156,7 +156,7 @@ export class AppComponent implements OnInit {
           const ip = value?.ip;
           // const ip = '192.168.1.5';
 
-          let url = `http://api.ipstack.com/${ip}?access_key=89f250b5498b26944125ef13ea977f66
+          let url = `https://api.ipstack.com/${ip}?access_key=89f250b5498b26944125ef13ea977f66
 `;
           return this._http.get(url);
         })
