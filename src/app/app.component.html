@@ -1,6 +1,14 @@
-<div *ngIf="IPdata">
+<div>
+  <button id="one" (click)="clickOne()">Click ipApi</button>
+  <button id="two" (click)="clickTwo()">Click ipStack</button>
+  <button id="three" (click)="clickThree()">Click ipGeo</button>
+  <button id="three" (click)="clickFour()">Click googleGeo</button>
+  <button id="three" (click)="clickFive()">Click ipLookup</button>
+</div>
+<div id="list"></div>
+<div>
   <h1>IP location: {{ IPdata?.city }}</h1>
-  <h3>Lat: {{ IPdata.latitude }}</h3>
-  <h3>Long: {{ IPdata.longitude }}</h3>
+  <h3>Lat: {{ IPdata?.latitude }}</h3>
+  <h3>Long: {{ IPdata?.longitude }}</h3>
 </div>
 <div id="map" #map class="full"></div>
