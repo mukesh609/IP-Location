@@ -1,0 +1,6 @@
+<div *ngIf="IPdata">
+  <h1>IP location: {{ IPdata?.city }}</h1>
+  <h3>Lat: {{ IPdata.latitude }}</h3>
+  <h3>Long: {{ IPdata.longitude }}</h3>
+</div>
+<div id="map" #map class="full"></div>
